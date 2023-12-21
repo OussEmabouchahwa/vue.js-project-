@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* CSS goes here */
+        .right-align {
+            text-align: right;
+        }
+
+        .dog-info {
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+    <script>
+        var dog = {
+            globalArray: [5, 6, 3, 2, 9],
+            nonMutatingSort: function(arr) {
+                // Only change code below this line
+                return arr.slice().sort(function(a, b) {
+                    return a - b;
+                });
+                // Only change code above this line
+            }
+        };
+    </script>
+</head>
+<body>
+    <p class="right-align">This text is aligned to the right.</p>
+    <button onclick="alert(dog.nonMutatingSort(dog.globalArray))">Click me</button>
+    <div class="dog-info" id="dogInfo"></div>
+</body>
+</html>
